@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KOŠARICA | ARKTIK vodoinstalacije</title>
+   <link rel="icon" type="image/x-icon" href="images/logo.png">
+   <link rel="stylesheet" href="styles/index.css">
+   <script src="scripts/funkcije.js"></script>
+</head>
+
+<body>
+   <%- include('partials/header') %>
+
+   <div id="omotacKosarice">
+      <div id="kosarica">
+         <div id="artikliUKosarici"></div>
+         <div id="kolicine"></div>
+      </div>
+   </div>
+   <script>
+      kosarica();
+      ukBrArtikala();
+   </script>
+
+   <%- include('partials/footer') %>
+
+</body>
+</html>

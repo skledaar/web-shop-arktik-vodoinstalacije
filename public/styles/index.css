@@ -1,0 +1,367 @@
+body {
+   display: grid;
+   grid-template-areas: 
+         'logo logo logo'
+         'divOznKategorije divOznKategorije poljeKosarice'
+         'pozadina pozadina pozadina'
+         'lijevaTraka artikli artikli'
+         'omotacKosarice omotacKosarice omotacKosarice'
+   ;
+   margin: 0px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+   font-weight: normal;
+   color: white;
+}
+
+h3 {
+   font-weight: normal;
+   text-align: center;
+}
+
+#logo {
+   width: 15em;
+   padding: 1em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-area: logo;
+}
+
+#logo img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+#divOznKategorije {
+   width: 65vw;
+   background-color: steelblue;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   grid-area: divOznKategorije;
+}
+
+#poljeKosarice {
+   width: 20vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   grid-area: poljeKosarice;
+}
+
+#poljeKosarice a {
+   width: 25%;
+   position: relative;
+   aspect-ratio: 1;
+}
+
+#poljeKosarice img {
+   height: 100%;
+}
+
+#ukArtikala {
+   position: absolute;
+   bottom: -0.2em;
+   right: -0.5em;
+   width: 1em;
+   height: 1em;
+   border-radius: 50%;
+   background-color: orangered;
+   border: 1px solid black;
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#izbornik {
+   padding: 0.5em;
+   width: fit-content;
+   background-color:orangered;
+   grid-area: izbornik;
+}
+
+#izbornik button:first-of-type {
+   margin-top: 5px;
+}
+
+#izbornik button {
+   display: block;
+   margin-bottom: 5px;
+   text-decoration: none;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   color: rgb(36, 36, 156);
+   transition: color 0.5s ease;
+}
+
+#izbornik button:hover {
+   background-color:white;
+   color: rgb(0, 0, 0);
+   transition: background-color 0.2s ease;
+}
+
+#linkovi {
+   width: 100%;
+   min-height: 8em;
+   background-color: steelblue;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   grid-area: linkovi;
+}
+
+#linkovi a {
+   color: white;
+}
+
+#lijevaTraka {
+   width: fit-content;
+   grid-area: lijevaTraka;
+}
+
+#pozadina {
+   width: 100%;
+   height: 400px;
+   background-image: url("../images/pozadina.jpg");
+   background-size: cover;
+   background-position: center;
+   border: 0px solid blue;
+   overflow: hidden;
+   grid-area: pozadina;
+}
+
+#pozdravniTekst {
+   width: 100%;
+   background-color: orangered;
+   overflow: hidden;
+   position: relative;
+   white-space: nowrap;
+}
+
+#pozdravniTekst p {
+   width: auto;
+   animation: scrollaj 30s linear infinite;
+   text-align: right;
+   transform: translateX(-100%);
+}
+
+@keyframes scrollaj {
+   0% {transform: translateX(-100%);}
+   100% {transform: translateX(100%);}
+}
+
+#artikli {
+   width: 100%;
+   grid-area: artikli;
+   margin-bottom: 3em;
+}
+
+#artikli div {
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   margin: 5%;
+   background-color:beige;
+   box-shadow: 0px 4px 8px gray;
+   border-radius: 5%;
+}
+
+#artikli div img {
+   width: 90%;
+   margin: 5%;
+   margin-bottom: 0%;
+   aspect-ratio: 1;
+}
+
+#artikli div div {
+   width: 90%;
+   margin: 5%;
+   margin-bottom: 0%;
+   aspect-ratio: 1;
+   background-position: center;
+   background-size: cover;
+   box-shadow: none;
+   border-radius: 2%;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: end;
+   justify-content: space-between;
+}
+
+#artikli div div button {
+   aspect-ratio: 1;
+   width: 25%;
+   margin: 0.2em;
+   border-radius: 50%;
+   visibility: hidden;
+}
+
+#artikli div div div {
+   width: 1.5em;
+   border-radius: 50%;
+   font-size: 1.5em;
+   background-color: orangered;
+   border: 2px solid black;
+   margin: 0.2em;
+   align-items: center;
+   justify-content: center;
+}
+
+#artikli div div button:active {
+   background-color: rgb(209, 209, 209);
+}
+
+#artikli div div:hover button {
+   visibility: visible;
+}
+
+#artikli div div button img {
+   aspect-ratio: initial;
+}
+
+#omotacKosarice {
+   display: flex;
+   justify-content: center;
+   padding: 1em;
+   grid-area: omotacKosarice;
+}
+
+#kosarica {
+   display: flex;
+   flex-direction: row;
+   border: 1px solid black;
+}
+
+#kosarica div {
+   margin: 1em;
+}
+
+#kosarica div div button {
+   background-color: transparent;
+   border: none;
+   border-radius: 50%;
+   aspect-ratio: 1;
+   width: fit-content;
+   height: fit-content;
+   padding: 0px;
+   margin: 2px;
+   width: 1em;
+   height: 1em;
+}
+
+#kosarica div div button:hover {
+   cursor: pointer;
+}
+
+#kosarica div div button img {
+   width: 1em;
+   height: 1em;
+}
+
+#kosarica div div {
+   display: flex;
+}
+
+#footer {
+   background-color: darkred;
+   padding: 1em;
+   text-align: center;
+   position: fixed;
+   bottom: 0;
+   width: 100vw;
+   height: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+   body {
+      overflow-x: hidden;
+   }
+   #divOznKategorije {
+      width: calc(100vw - 15em);
+   }
+   
+   #artikli {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1em;
+   }
+      
+   #artikli div {
+      width: calc(50% - 3em);
+      margin: 1em;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   body {
+      grid-template-areas: 
+         'logo divOznKategorije poljeKosarice'
+         'lijevaTraka pozadina pozadina'
+         'lijevaTraka artikli artikli'
+         'footer footer footer'
+         'omotacKosarice omotacKosarice omotacKosarice'
+      ;
+   }
+
+   #logo {
+      padding: 0em;
+      width: 15em;
+      height: 100%;
+   }
+   
+   #logo img {
+      width: 90%;
+      padding: 5%;
+   }
+
+   #divOznKategorije {
+      width: calc(100vw - 15em - 1em - 15em);
+   }
+
+   #divOznKategorije, #logo, #poljeKosarice {
+      height: 7em;
+   }
+
+   #izbornik {
+      width: 15em;
+   }
+
+   #izbornik button:first-of-type {
+      margin-top: 1em;
+   }
+   
+   #izbornik button {
+      margin-bottom: 1em;
+      margin-left: 1em;
+   }
+
+   #linkovi {
+      min-height: 30vh;
+   }
+   
+   #poljeKosarice {
+      width: 15em;
+   }
+
+   #pozadina {
+      width: calc(100vw - 15em - 1em);
+   }
+
+   #artikli {
+      width: calc(100% - 2em);
+   }
+
+   #artikli div {
+      width: 20em;
+      margin: 1em;
+   }
+
+}

@@ -2,6 +2,8 @@ Web trgovina razvijena u Node.js i Express. Stranica za izmišljeni dućan sanit
 funkcionalnostima: pregled artikala po kategorijama, dodavanje u košaricu i promjena količine u
 košarici. Projekt u sklopu kolegija Razvoj programske potpore za web (4. semestar).
 
+Deploy (treba mu da se probudi iz downtime-a): https://web-shop-arktik-vodoinstalacije.onrender.com/
+
 ![image](https://github.com/user-attachments/assets/8c501132-535f-4462-bc45-b47db61f09a2)
 
 ![image](https://github.com/user-attachments/assets/31d5a19b-548d-4d9d-980e-9a3036f11cbc)
